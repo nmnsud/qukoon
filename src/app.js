@@ -1,6 +1,5 @@
 const electron = require('electron');
 const {Menu, app, BrowserWindow, dialog} = require('electron');
-app.commandLine.appendSwitch('--enable-experimental-web-platform-features');
 const fs = require('fs');
 const $dirname = __dirname;
 const os = require('os');
@@ -13,20 +12,8 @@ function localRequire(node) {
 	var dir = $dirname + '\\nodes\\' + node;
 	return require(dir);
 }
-/**
- *	Get total CPU speed in GHz
- *
- */
- function total_cpus() {
-	var cpus = os.cpus();
-	var speed = 0;
-	for (var x=0;x < cpus.length;x++) {
-		speed += cpus[x].speed;
-	}
-	return (speed / 1000);
-}
 /*
- * Getting the directory upto the "Playground"
+ * Getting apps' root directory
  */
 function get_main_directory() {
 	var d = __dirname.split(/\\/);
