@@ -1,6 +1,4 @@
 # Qukoon
-
-# About
 A open-source video editor. Easy to use!
 
 # Ingredients
@@ -24,10 +22,12 @@ Here are some screenshots.
 * File Manager
 * Audio/Video mixer
 * Project manager
+* Timeline
 
 # TODOs
 * Compiling project into one file, with formats ('.mp4', '.wmv', etc.)
-* Mixer having bugs
+* Mixer having bugs.
+* Timeline scaling feature.
 * UI not complete, yet!
 
 If you wanted to contribute. Please, feel free!
