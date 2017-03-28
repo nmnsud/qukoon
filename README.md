@@ -1,5 +1,5 @@
 # Qukoon
-A open-source video editor. Easy to use!
+An open-source video editor. Easy to use!
 
 # Ingredients
 * JavaScript
