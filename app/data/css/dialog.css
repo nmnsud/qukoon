@@ -1,0 +1,76 @@
+body.dialog_window {
+    display: table;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+body.dialog_window > div {
+    display: table-row;
+}
+
+div.dialog_util {
+    height: 100%;
+}
+
+.dialog_captions {
+    text-align: right;
+}
+
+.dialog_captions > button {
+    margin: 0 2px;
+}
+.wrapper {
+    height: 100%;
+    display: table-cell;
+}
+
+div.wrapper > .list-wrap {
+    height: 100%;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.dialog_util div.wrapper {
+    padding: 10px 0;
+    vertical-align: middle;
+}
+.dialog_captions > div.wrapper {
+    padding: 10px 20px;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+button.dialog_btn:nth-child(1):active {
+    background-color: #06c !important;
+}
+button.dialog_btn:nth-child(1) {
+    background-color: #08e;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-bottom-color: rgba(0,0,0,.3);
+}
+body {
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+button.left {
+    float: left;
+}
+
+.section {
+    padding: 10px;
+}
+.section-2 {
+    padding: 0 10px;
+}
+
+.label {
+    font-weight: bold;
+    color: rgba(0,0,0,.5);
+    padding-bottom: 10px;
+}

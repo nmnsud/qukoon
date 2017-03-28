@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Project</title>
+	<link rel="stylesheet" href="../css/dialog.css"/>
+	<link rel="stylesheet" href="../css/main.css"/>
+	<link rel="stylesheet" href="../css/design.css"/>
+	<link rel="stylesheet" href="../css/dark.css"/>
+	<script src="../js/lib.js"></script>
+	<script src="../js/init.js"></script>
+	<script src="../js/util.js"></script>
+	<script src="../js/proto.js"></script>
+</head>
+<body class="dialog_window">
+	<script src="../js/error.js"></script>
+	<div class="dialog_util">
+		<div class="wrapper">
+			<div class="section">
+				<div class="label">Project details</div>
+				<div class="error_box" id="err" style="display:none"></div>
+				<div class="wrapper_line">
+					<input type="text" placeholder="Project name..." value="New project" id="proj_name"/>
+				</div>
+				<div class="wrapper_line">
+					<input type="text" placeholder="Project folder..." id="proj_folder" disabled="true"/>
+					<a class="float_right" id="change" href="#">Change</a>
+				</div>
+				<div class="wrapper_line">
+					<label>
+						<input type="checkbox" checked="true" id="miasp"/>
+						<checkbox></checkbox>
+						Make it as start-up project
+					</label>
+					<que title="Whenever you open Qukoon, this project will starts Automatically."></que>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dialog_captions">
+		<div class="wrapper">
+			<span class="float_left">
+				<button id="open">Open Existing Project</button>
+			</span>
+			<button id="ok">OK</button>
+			<button id="cancel">Cancel</button>
+		</div>
+	</div>
+	<script src="../js/new_project/front.js"></script>
+	<script src="../js/after.js"></script>
+</body>
+</html>

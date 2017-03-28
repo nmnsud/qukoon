@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/base.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/design.css"/>
+	<link rel="stylesheet" href="css/ico.css"/>
+	<link rel="stylesheet" href="css/dark.css"/>
+	<script src="js/lib.js"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/breadcrumb.js"></script>
+	<script src="js/entities.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/list.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/project.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/dialog.js"></script>
+	<script src="js/eval.js"></script>
+	<script src="js/proto.js"></script>
+	<script src="js/dskchk.js"></script>
+	<script src="js/play.js"></script>
+</head>
+<body id="main" class="window_main full_sized absoluted top-left non-margined">
+	<script src="js/error.js"></script>
+	<div>
+		<div class="menubar">
+			<menu-item class="popable" tabindex="1">File
+				<pop align-x="left">
+					<item id="new_project_opener">New project</item>
+					<item id="open_project_opener">Open project</item>
+					<item id="preferences_opener">Preferences</item>
+					<item id="exit_opener">Exit</item>
+				</pop>
+			</menu-item>
+		</div>
+	</div>
+	<div id="ribbon" class="window_ribbon" style="display:none">
+		<div class="table_cell">
+			<div class="ribbon_item" icon="add" title="New file"></div>
+			<div class="ribbon_item" id="save_this" icon="save" title="Save"></div>
+			<div class="ribbon_item show_title" id="run_script" icon="run" title="Run"></div>
+		</div>
+	</div>
+	<div id="project_window" class="window_child">
+		<div class="table full_sized">
+			<div class="table_row">
+				<div class="table_cell">
+					<div class="linear_layout full_sized">
+						<div class="window_panels full_sized">
+							<div class="window_panel left">
+								<div class="panel_main">
+									<div class="panel_header">
+										<div class="panel_split title">File manager</div>
+										<div class="panel_split btn">
+											<button icon="close" title="Close this panel"></button>
+										</div>
+									</div>
+									<div class="panel_header sub" >
+										<div class="panel_split btn left"></div>
+										<div class="panel_split btn center">
+											<button icon="search" target="file_search_box" id="file_search_box_aimer" dondo="show:hide" title="Search for files"></button>
+											<search style="display:none" aimer="file_search_box_aimer" id="file_search_box" target="Interface.search_files_from_project" placeholder="Search for files..."></search>
+										</div>
+										<div class="panel_split btn right">
+											<button icon="sort" title="Options" class="popable">
+												<pop align-x="right" align-y="top">
+													<item id="fm_mk_folder">New folder</item>
+													<item id="fm_mk_file">New file</item>
+												</pop>
+											</button>
+										</div>
+									</div>
+									<div class="panel_dialog" id="fm_mk_input_holder" style="display:none">
+										<input type="text"/>
+										<button />
+									</div>
+									<div class="panel_list" id="project_files_list"></div>
+								</div>
+							</div>
+							<div class="window_panel main">
+								<div class="panel_main">
+									<div class="panel_header">
+										<div class="panel_split title">Selected Clip</div>
+										<div class="panel_split btn">
+											<button icon="close" title="Close this panel"></button>
+										</div>
+									</div>
+									<div class="panel_header sub" ></div>
+									<div class="table_row window_videoeditor">
+										<div class="table_cell" id="editor_container">
+											<div class="editor_wrapper_flow">
+												<video id="selected_video_launcher_wrapper"></video>
+											</div>
+										</div>
+									</div>
+									<div class="table_row window_imageview" style="display:none">
+										<div class="table_cell image_handlr">
+											<img id="main_image_front" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="window_panel main">
+								<div class="panel_main">
+									<div class="panel_header">
+										<div class="panel_split title">Project Clip</div>
+										<div class="panel_split btn">
+											<button icon="close" title="Close this panel"></button>
+										</div>
+									</div>
+									<div class="panel_header sub" ></div>
+									<div class="table_row window_videoeditor">
+										<div class="table_cell" id="editor_container">
+											<div class="editor_wrapper_flow">
+												<video id="project_video_launcher_wrapper"></video>
+											</div>
+										</div>
+									</div>
+									<div class="table_row window_imageview" style="display:none">
+										<div class="table_cell image_handlr">
+											<img id="main_image_front" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="window_panel right" style="width:160px;">
+								<div class="panel_main">
+									<div class="panel_header">
+										<div class="panel_split title">Imported files</div>
+										<div class="panel_split btn">
+											<button icon="close" title="Close this panel"></button>
+										</div>
+									</div>
+									<div class="panel_header sub">
+										<div class="panel_split btn left" style="display:none" id="imported_files_option">
+											<button icon="add" title="Add to layer" id="imported_file_add_layer"></button>
+											<button icon="remove" title="Remove" id="imported_file_remove_sel"></button>
+										</div>
+										<div class="panel_split btn right"></div>
+									</div>
+									<div class="panel_list" id="method_list"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="table_row window_ppanel">
+				<div class="ppanel_frame">
+					<div class="ppanel_headcontrols">
+						<button icon="play" title="Play"></button>
+						<button icon="pause" title="Pause"></button>
+						<button icon="clear" title="Clear"></button>
+						<button id="layrer_cd">Clean duplicates</button>
+					</div>
+					<div class="relative full_sized" id="layrer_scroll">
+						<div class="ppanel_mainlist" id="layrer_view">
+							<div class="table_row" id="layrer_timescale"></div>
+						</div>
+						<span class="cursor" id="layrer_cursor"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<video id="temp_video" style="display:none"></video>
+	<script src="js/layerer/__init__.js"></script>
+	<script src="js/layerer/ui.js"></script>
+	<script src="js/layerer/arrange.js"></script>
+	<script src="js/layerer/time.js"></script>
+	<script src="js/layerer/events.js"></script>
+	<script src="js/layerer/cursor.js"></script>
+	<script src="js/layerer/player.js"></script>
+	<script src="js/panel.js"></script>
+	<script src="js/end.js"></script>
+	<script src="js/after.js"></script>
+</body>
+</html>

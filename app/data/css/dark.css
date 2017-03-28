@@ -1,0 +1,124 @@
+.window_main {
+    background-color: #333;
+}
+
+menu-item {
+    color: #fff;
+}
+
+menu-item.popable:focus {
+    background-color: #555;
+    color: #fff;
+}
+
+pop {
+    background-color: #555;
+    color: #fff;
+}
+
+.ppanel_headcontrols {
+    background-color: #444;
+    border-top-color: #666;
+    border-bottom-color: #666;
+}
+
+button {
+    color: #fff;
+    border-color: rgba(255,255,255,.1);
+    border-bottom-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+button:hover {
+    color: #fff;
+    border-color: rgba(255,255,255,.2);
+    border-bottom-color: rgba(255,255,255,.3);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.window_panel.main {
+    background-color: #333;
+    border-color: #444;
+}
+
+.window_panels {
+    border-top-color: #444;
+}
+
+.table_row.window_videoeditor > .table_cell, .table_row.window_texteditor > .table_cell, .console_frame, .table_cell.image_handlr {
+    border-top-color: #444;
+}
+.panel_header {
+    background-color: #333;
+}
+
+.panel_list {
+    border-top-color: #444;
+    background-color: #333;
+}
+
+.list-item {
+    color: #fff;
+}
+
+.list-item:hover {
+    background-color: #666 !important;
+}
+
+.list-item:nth-child(2n+1) {
+    background-color: #3a3a3a;
+}
+
+input {
+    background-color: #444;
+    color: #fff;
+    border-color: rgba(255,255,255,.3) !important;
+}
+input:focus {
+    border-color: #08e !important;
+}
+.breadcrumb_item:last-child {
+    background-color: #666;
+}
+
+.breadcrumb_item {
+    border-color: #777;
+    color: #fff;
+}
+
+.dialog_util {
+    background-color: #222;
+    color: #fff;
+}
+
+.dialog_captions {
+    background-color: #333;
+}
+
+.label {
+    color: #fff;
+}
+
+.wrapper_line > input[disabled] {
+    color: #888;
+}
+
+checkbox:after, checkbox:before {
+    background-color: #fff;
+}
+input[type="checkbox"] + checkbox {
+    border-color: rgba(255,255,255,.2);
+    border-bottom-color: rgba(255,255,255,.4);
+}
+a {
+    color: #08e;
+}
+
+button[disabled] {
+    color: rgba(255,255,255,.3);
+    border-color: rgba(255,255,255,.1);
+}
+
+.range-bg {
+    background-color: rgba(255,255,255,.1);
+}

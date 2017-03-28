@@ -1,0 +1,16 @@
+{
+  "name": "Qukoon",
+  "version": "1.0.45",
+  "description": "Video editing, made easy!",
+  "main": "app.js",
+  "homepage": "http://example.com/",
+  "author": {
+  	"name": "Naman Sood",
+  	"email": "namansood15@gmail.com",
+  	"url": "http://example.com/"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,104 @@
+*[icon]:before {
+	background-repeat: no-repeat;
+	background-size: 100% 100% !important;
+	background-position: 50% 50%;
+}
+*[icon="any"]:before, *[icon]:before {
+	background-image: url('ico/files/any_type.png');
+}
+.large[icon="any"]:before, .large[icon]:before {
+	background-image: url('ico/files/any_type@2x.png');
+}
+*[icon="folder"]:before {
+	background-image: url('ico/files/folder.png');
+}
+.large[icon="folder"]:before {
+	background-image: url('ico/files/folder@2x.png');
+}
+*[icon="add"]:before {
+	background-image: url('ico/icons/general/add.png');
+}
+.large[icon="add"]:before {
+	background-image: url('ico/icons/general/add@2x.png');
+}
+*[icon="search"]:before {
+	background-image: url('ico/icons/actions/findPlain.png');
+}
+.large[icon="search"]:before {
+	background-image: url('ico/icons/general/findPlain@2x.png');
+}
+*[icon="sort"]:before {
+	background-image: url('ico/icons/general/webSettings_dark.png');
+}
+.large[icon="sort"]:before {
+	background-image: url('ico/icons/general/webSettings_dark@2x.png');
+}
+*[icon="home"]:before {
+	background-image: url('ico/files/homeFolder.png');
+}
+.large[icon="home"]:before {
+	background-image: url('ico/files/homeFolder@2x.png');
+}
+*[icon="settings"]:before {
+	background-image: url('ico/ribbon/settings.png');
+}
+.large[icon="settings"]:before {
+	background-image: url('ico/ribbon/settings@2x.png');
+}
+*[icon="run"]:before {
+	background-image: url('ico/ribbon/toolWindowRun.png');
+}
+.large[icon="run"]:before {
+	background-image: url('ico/ribbon/toolWindowRun@2x.png');
+}
+*[icon="html"]:before {
+	background-image: url('ico/files/html.png');
+}
+.large[icon="html"]:before {
+	background-image: url('ico/files/html@2x.png');
+}
+*[icon="js"]:before {
+	background-image: url('ico/files/javaScript.png');
+}
+.large[icon="js"]:before {
+	background-image: url('ico/files/javaScript@2x.png');
+}
+*[icon="json"]:before {
+	background-image: url('ico/files/json.png');
+}
+.large[icon="json"]:before {
+	background-image: url('ico/files/json@2x.png');
+}
+*[icon="css"]:before {
+	background-image: url('ico/files/css.png');
+}
+.large[icon="css"]:before {
+	background-image: url('ico/files/css@2x.png');
+}
+*[icon="save"]:before {
+	background-image: url('ico/icons/actions/menu-saveall.png');
+}
+.large[icon="save"]:before {
+	background-image: url('ico/icons/actions/menu-saveall@2x.png');
+}
+*[icon="close"]:before, *[icon="remove"]:before {
+	background-image: url('ico/icons/actions/close.png');
+}
+.large[icon="close"]:before, .large[icon="close"]:before {
+	background-image: url('ico/icons/actions/close@2x.png');
+}
+*[icon="back"]:before {
+	background-image: url('ico/tab/back.png');
+}
+*[icon="upFolder"]:before {
+	background-image: url('ico/icons/nodes/upFolder.png');
+}
+.large[icon="upFolder"]:before {
+	background-image: url('ico/icons/nodes/upFolder.png');
+}
+search > button {
+	background-image: url('ico/icons/actions/close.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 50%;
+}sssss

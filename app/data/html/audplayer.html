@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio Player</title>
+	<link rel="stylesheet" href="../css/dialog.css"/>
+	<link rel="stylesheet" href="../css/main.css"/>
+	<link rel="stylesheet" href="../css/design.css"/>
+	<link rel="stylesheet" href="../css/dark.css"/>
+	<script src="../js/lib.js"></script>
+	<script src="../js/init.js"></script>
+	<script src="../js/util.js"></script>
+	<script src="../js/proto.js"></script>
+</head>
+<body class="dialog_window">
+	<script src="../js/error.js"></script>
+	<div class="dialog_util">
+		<div class="wrapper">
+			<div class="section-2">
+				<div class="player-label float_left" id="name">Loading...</div>
+				<div class="player-label float_right" id="timing">0/0</div>
+			</div>
+			<div class="player_table">
+				<div class="master_left">
+					<button id="play_pause" title="Pause/Play"></button>
+				</div>
+				<div class="master_middle">
+					<div class="range-wrapper">
+						<div class="range-bg"></div>
+						<div class="range-main" id="ranger"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/player/front.js"></script>
+</body>
+</html>

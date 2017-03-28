@@ -1,0 +1,9 @@
+var Layerer = {};
+Layerer.layers = {};
+Layerer.holder = [];
+Layerer.scroll = 0;
+Layerer.scaleWidth = 50;
+Layerer.isPlaying = false;
+Layerer.cursorX = Layerer.scaleWidth;
+Layerer.view = $('#layrer_view');
+Layerer.cursor = $('#layrer_cursor');
