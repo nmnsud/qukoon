@@ -1,5 +1,7 @@
+<p align="center">
+  <img  src="https://raw.githubusercontent.com/nmnsud/qukoon/master/splash.png" />
+</p>
 
-![Logo](https://raw.githubusercontent.com/nmnsud/qukoon/master/splash.png)
 # Qukoon
 An open-source video editor. Easy to use!
 
