@@ -29,10 +29,10 @@ Here are some screenshots.
 * Timeline
 
 # TODOs
-* Compiling project into one file, with formats ('.mp4', '.wmv', etc.)
-* Mixer having bugs.
-* Timeline scaling feature.
-* UI not complete, yet!
+* Project compiler in ('.mp4', '.wmv', etc.) formats
+* Fixing mixer bug.
+* Scaling for timeline.
+* Adding more components to UI.
 
-If you wanted to contribute. Please, feel free!
+If you wanted to contribute. Please, feel free!<br/>
 Thanks!
