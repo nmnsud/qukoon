@@ -13,7 +13,7 @@ An open-source video editor. Easy to use!
 * CSS
 
 # Status
-It is still under development. So, please be patience. Guys!
+I'm searching for someone who can work on the timeline, If you're intrested please feel free to join :smile:.
 
 # Screenshots
 Here are some screenshots.
